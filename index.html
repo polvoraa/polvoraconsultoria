@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pólvora Consultoria</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-gray-800">
+
+  <!-- Header -->
+  <header class="flex justify-between items-center px-6 py-4 border-b">
+    <img src="logo1.png" alt="logo" class="logo" />
+    <nav class="hidden md:flex gap-6">
+      <a href="#servicos" class="hover:text-blue-600">Serviços</a>
+      <a href="#sobre" class="hover:text-blue-600">Sobre</a>
+      <a href="#contato" class="hover:text-blue-600">Contato</a>
+    </nav>
+    <button class="btn">Solicitar Consultoria</button>
+  </header>
+
+  <!-- Hero -->
+  <section class="text-center px-6 py-16">
+    <h1 class="titulo-principal">Consultoria Especializada em Engenharia</h1>
+    <p class="descricao">Soluções personalizadas, inovação e eficiência para seu projeto de infraestrutura, edificações ou gestão de obras.</p>
+
+    <!-- Carrossel -->
+    <div class="overflow-hidden relative mt-10">
+      <div class="flex gap-4 transition-transform duration-500 ease-in-out w-[2000px] animate-scroll-x">
+        <img src="bosque1.jpg" alt="Descrição da imagem" class="min-w-[300px] h-48 object-cover rounded" />
+        <img src="imagens/bosque2.jpg" alt="Descrição da imagem" class="min-w-[300px] h-48 object-cover rounded" />
+        <img src="imagens/quadrak.jpg" alt="Descrição da imagem" class="min-w-[300px] h-48 object-cover rounded" />
+        <img src="imagens/solos.jpg" alt="Descrição da imagem" class="min-w-[300px] h-48 object-cover rounded" />
+        <img src="imagens/one.PNG" alt="Descrição da imagem" class="min-w-[300px] h-48 object-cover rounded" />
+        <img src="imagens/Eudoro.jpg" alt="Descrição da imagem" class="min-w-[300px] h-48 object-cover rounded" />
+        <img src="imagens/Escritorio.PNG" alt="Descrição da imagem" class="min-w-[300px] h-48 object-cover rounded" />
+        <img src="imagens/Ibis.jpg" alt="Descrição da imagem" class="min-w-[300px] h-48 object-cover rounded" />
+        <div class="min-w-[300px] h-48 bg-gray-300 rounded"></div>
+        <div class="min-w-[300px] h-48 bg-gray-300 rounded"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Serviços -->
+  <section id="servicos" class="px-6 py-12">
+    <h2 class="section-title">Serviços</h2>
+    <div class="grid-cards">
+      <div class="card">Gerenciamento de Obras</div>
+      <div class="card">Projetos de Infraestrutura</div>
+      <div class="card">Consultoria Técnica</div>
+      <div class="card">Soluções Sustentáveis</div>
+    </div>
+  </section>
+
+  <!-- Casos de Sucesso -->
+  <section class="px-6 py-12 bg-gray-50">
+    <h2 class="section-title">Casos de Sucesso</h2>
+    <div class="grid-casos">
+      <div class="relative group caso-principal">
+        <img src="imagens/quadrak.jpg" alt="Projeto destaque" class="w-full h-full object-cover rounded" />
+        <div class="absolute inset-0 bg-black bg-opacity-50 text-white opacity-0 group-hover:opacity-100 flex items-center justify-center text-xl font-semibold rounded transition-opacity duration-300">Quadra K</div>
+      </div>
+      <div class="caso-lista">
+        <div class="relative group mb-2">
+          <img src="imagens/bosque1.jpg" alt="Projeto 1" class="card-placeholder h-16 w-full object-cover rounded" />
+          <div class="absolute inset-0 bg-black bg-opacity-50 text-white opacity-0 group-hover:opacity-100 flex items-center justify-center text-sm font-medium rounded transition-opacity duration-300">Bosque 1</div>
+        </div>
+        <div class="relative group mb-2">
+          <img src="imagens/bosque2.jpg" alt="Projeto 2" class="card-placeholder h-16 w-full object-cover rounded" />
+          <div class="absolute inset-0 bg-black bg-opacity-50 text-white opacity-0 group-hover:opacity-100 flex items-center justify-center text-sm font-medium rounded transition-opacity duration-300">Bosque 2</div>
+        </div>
+        <div class="relative group">
+          <img src="imagens/solos.jpg" alt="Projeto 3" class="card-placeholder h-16 w-full object-cover rounded" />
+          <div class="absolute inset-0 bg-black bg-opacity-50 text-white opacity-0 group-hover:opacity-100 flex items-center justify-center text-sm font-medium rounded transition-opacity duration-300">Solos</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Sobre -->
+  <section id="sobre" class="px-6 py-12">
+    <h2 class="section-title">Sobre a Pólvora</h2>
+    <div class="sobre-container">
+      <div class="texto-sobre">
+        <p>A Pólvora Consultoria é especializada em soluções estratégicas para engenharia civil, com foco em gerenciamento de obras, projetos de infraestrutura e gestão completa de empreendimentos. Nosso time alia experiência técnica, inovação e compromisso com resultados.</p>
+      </div>
+      <div class="imagem-sobre"></div>
+    </div>
+  </section>
+
+  <!-- Newsletter -->
+  <section class="newsletter">
+    <h3 class="newsletter-title">Receba nossas novidades e insights em seu e-mail</h3>
+    <form class="form-newsletter">
+      <input type="email" placeholder="Seu e-mail" class="input-email" />
+      <button class="btn">Assinar</button>
+    </form>
+  </section>
+
+  <!-- Rodapé -->
+  <footer id="contato" class="rodape">
+    <div class="mb-4">© 2025 Pólvora Consultoria. Todos os direitos reservados.</div>
+    <div class="links-sociais">
+      <a href="#">Instagram</a>
+      <a href="#">LinkedIn</a>
+      <a href="#">Behance</a>
+    </div>
+  </footer>
+
+  <style>
+    @keyframes scroll-x {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+    .animate-scroll-x {
+      animation: scroll-x 20s linear infinite;
+    }
+  </style>
+
+</body>
+</html>
